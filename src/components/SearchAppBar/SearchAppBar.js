@@ -68,7 +68,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     <>
       <MenuDrawer isOpen={open} toggleDrawer={toggleDrawer} />
       <Box sx={{ flexGrow: 1 }}>
-        <AppBar position="static">
+        <AppBar position="static" background-color="rgb(11, 92, 173) !important;">
           <Toolbar>
             <IconButton
               size="large"
