@@ -1,6 +1,5 @@
 import { React, useState, useEffect } from 'react'
 import ResponsiveGrid from '../components/ResponsiveGrid/ResponsiveGrid'
-import ToogleColorMode from '../components/ToogleColorMode/ToogleColorMode'
 import SimpleContainer from '../components/SimpleContainer/SimpleContainer';
 import Loader from '../components/Loader/Loader'
 import axios from 'axios';
@@ -34,7 +33,6 @@ const Home = () => {
 
     return (
         <>
-            <ToogleColorMode />
             {loading && <Loader />}
             <SimpleContainer>
                 {!loading && <ResponsiveGrid noticias={noticias} />}
